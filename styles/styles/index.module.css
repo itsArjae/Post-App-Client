@@ -1,0 +1,181 @@
+.main_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+}
+.post{
+  min-width: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+.post:hover{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.post__title{
+padding: 10px;
+margin: 0 2rem;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.post__body{
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.post__footer{
+margin-left: auto;
+padding: 10px;
+}
+
+/* Create Post ===================================  */
+.CreatePost__Container{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.createPost_form{
+  display: flex;
+  flex-direction: column;
+}
+#createPost__inputTitle{
+  min-height: 30px;
+  max-width: 200px;
+  font-size: 15px;
+}
+#createPost__inputMessage{
+  min-height: 100px;
+  max-width: 500px;
+  text-align:top;
+}
+#createPost__inputUsername{
+  min-height: 30px;
+  max-width: 200px;
+  font-size: 15px;
+}
+#createPost__inputTitle,
+#createPost__inputMessage,
+#createPost__inputUsername{
+  outline: none;
+  margin: .5rem 0;
+  padding: 3px;
+}
+
+/*View post ============*/
+.post__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.post__container,
+.post__comments{
+  margin:  1rem;
+}
+.post__comments{
+  max-width: 500px;
+  min-width: 300px;
+  min-height: 300px;
+  border: 1px solid grey;
+  margin-top: 120px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 10px;
+}
+.post_btn__back{
+  background-color: white;
+  padding: 5px;
+  margin: 1rem 1rem;
+  cursor: pointer;
+}
+.post__commentsMessage{
+  min-height: 50px;
+  width: 200px;
+  margin-top: 10px;
+}
+.post_btn__commentsUpload{
+  background-color: white;
+  padding: 5px;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.post__commentsContainer{
+  min-height: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: .5rem 0;
+}
+/*Layout =======================*/
+.layout{
+  max-height: 100px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.layout_btn__nav{
+  height: 50px;
+  width: 100px;
+  margin: 0 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+.layout_btn__nav:hover{
+  background-color: aqua;
+}
+
+.layout_btn__container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/*register login ====================*/
+.login__container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+.login__form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#login__input{
+  max-width: 200px;
+  min-height: 40px;
+  margin: .5rem 0;
+}
+.login__btn{
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.login__btn:hover{
+  background-color: aqua;
+}
+.login{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
